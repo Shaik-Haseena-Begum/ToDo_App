@@ -24,4 +24,12 @@ public class Todo {
     private String description;
     @Column
     private boolean completed;  
+    public Todo() {
+        // Default constructor      
+    }  
+    public Todo(String title, String description, boolean completed) {
+        this.title = title;
+        this.description = description;
+        this.completed = completed;
+    }    
 }
